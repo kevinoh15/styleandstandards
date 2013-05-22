@@ -1,0 +1,46 @@
+/* mixins */
+.boxsizing(@boxsizing: border-box) { 
+	-webkit-box-sizing: @boxsizing;
+	-moz-box-sizing: 	@boxsizing;
+	-o-box-sizing: 		@boxsizing;
+	box-sizing: 		@boxsizing;
+}
+.boxshadow(@boxshadow) { 
+	-webkit-box-shadow: @boxshadow;
+	-moz-box-shadow: 	@boxshadow;
+	-o-box-shadow: 		@boxshadow;
+	box-shadow: 		@boxshadow;
+}
+
+.borderradius(@borderradius) { 
+	-webkit-border-radius: 	@borderradius;
+	-moz-border-radius: 	@borderradius;
+	-o-border-radius: 		@borderradius;
+	border-radius: 			@borderradius;
+}
+
+.transform(@transform) {
+	-webkit-transform: 	@transform;
+	-moz-transform: 	@transform;
+	-o-transform: 		@transform;
+	transform: 			@transform;
+}
+
+.transition(@transitionproperty, @duration: 0.3s, @animationtype: linear) {
+	-webkit-transition: @transitionproperty @duration @animationtype;  
+	-moz-transition:    @transitionproperty @duration @animationtype;
+	-ms-transition:     @transitionproperty @duration @animationtype; 
+	-o-transition:      @transitionproperty @duration @animationtype;
+}
+
+.columncount(@columncount) {
+	-webkit-column-count: 	@columncount;
+	-moz-column-count: 		@columncount;
+	column-count: 			@columncount;
+}
+
+.sprite(@backgroundposition) { 
+	background-image: 		url('img/styleandstandards-sprite.png');
+	background-repeat: 		no-repeat;
+	background-position:	@backgroundposition;
+}
