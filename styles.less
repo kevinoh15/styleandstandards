@@ -91,6 +91,11 @@ h1 {
 	margin: 0 0 5px 0;
 }
 
+h2 { 
+	color: @blue; 
+	font-size: 25px;
+}
+
 p {
 	font-size: 18px;
 	line-height: 40px;
@@ -283,6 +288,12 @@ nav.inpage {
 	.transition(background-color);
 
 	&:hover { background-color: @gray10; }
+
+	a { 
+		margin: 0 10px; 
+
+		&:nth-last-child(1) { margin: 0 0 0 10px; }
+	}
 }
 
 /*====================================================================== home  */
