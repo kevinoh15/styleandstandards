@@ -1,0 +1,520 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+
+  <title>Style and Standards</title>
+  <meta name="description" content="Style and Standards">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet/less" type="text/css" href="styles.less" />
+  <script src="js/less.js" type="text/javascript"></script>
+  <script src="js/jquery1.9.js"></script>
+</head>
+
+<body>
+	<header class="global">
+		<nav>
+			<a href='index.html' name="logo">
+				<h1>Style</h1>
+				<h2>and</h2>
+				<h3>Standards</h3>
+				<div class="clear"></div>
+			</a>
+			<nav>
+				<a href="sprite.html">Sprite & Buttons</a>
+				<a href="colors.html">Colors</a>
+				<a href="layout.html">Layout</a>
+				<a href="#">Prototypes</a>
+			</nav>
+			<div class="clear"></div>
+		</nav>
+	</header>
+	<section class="pagecontent">
+		<article>
+			<h1>Using the sprite</h1>
+			<p>ChathamDirect features the use of a CSS sprite to generate the icons find throughout the site. The usage of this helps improve upon the time required maintaining the image assets, getting items into production, and most importantly, page load times for the client due to a reduction in HTTP requests (you can read up on that <a href="http://css-tricks.com/css-sprites/" target="_blank">here</a>). Shown here are the icons built from the sprite along with rules for using them.
+			</p>
+		</article>
+		<article>
+			<h1>Base icon set</h1>
+			<span class="icondisplay">
+				<i class="icon" name="pointernorth"></i>
+				<label>Pointer - North</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="pointereast"></i>
+				<label>Pointer - East</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="pointersouth"></i>
+				<label>Pointer - South</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="pointerwest"></i>
+				<label>Pointer - West</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="pagelast"></i>
+				<label>Pager - Last</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="pagefirst"></i>
+				<label>Pager - First</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="upload"></i>
+				<label>Upload</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="download"></i>
+				<label>Download</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="arrownorth"></i>
+				<label>Arrow - North</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="arroweast"></i>
+				<label>Arrow - East</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="arrowsouth"></i>
+				<label>Arrow - South</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="arrowwest"></i>
+				<label>Arrow - West</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="caretnorth"></i>
+				<label>Caret - North</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="careteast"></i>
+				<label>Caret - East</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="caretsouth"></i>
+				<label>Caret - South</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="caretwest"></i>
+				<label>Caret - West</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="caretnorthrev"></i>
+				<label>Caret - North (white)</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="careteastrev"></i>
+				<label>Caret - East (white)</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="caretsouthrev"></i>
+				<label>Caret - South (white)</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="caretwestrev"></i>
+				<label>Caret - West (white)</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="cogwheel"></i>
+				<label>Settings</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="controlexpand"></i>
+				<label>Expand Controls</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="maxout"></i>
+				<label>Max Out</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="fullreduce"></i>
+				<label>Full Reduce</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="refresh"></i>
+				<label>Refresh</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="revert"></i>
+				<label>Revert</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="addition"></i>
+				<label>Addition</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="subtraction"></i>
+				<label>Subtraction</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="close"></i>
+				<label>Close</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="templates"></i>
+				<label>Templates</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="docs"></i>
+				<label>Docs</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="edit"></i>
+				<label>Edit</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="calendar"></i>
+				<label>Calendar</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="clock"></i>
+				<label>Clock</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="searchlarge"></i>
+				<label>Search - Large</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="search"></i>
+				<label>Search</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="user"></i>
+				<label>User</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="help"></i>
+				<label>Help</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="info"></i>
+				<label>Info</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="marriages"></i>
+				<label>Marriages</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="link"></i>
+				<label>Link</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="unlink"></i>
+				<label>Unlink</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="detailview"></i>
+				<label>Detailed View</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="overview"></i>
+				<label>Overview</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="visible"></i>
+				<label>Visible</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="hidden"></i>
+				<label>Hidden</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="group"></i>
+				<label>Group</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="isgrouped"></i>
+				<label>Is-Grouped</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="ascending"></i>
+				<label>Ascending</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="isascending"></i>
+				<label>Is-Ascending</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="descending"></i>
+				<label>Descending</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="isdescending"></i>
+				<label>Is-Descending</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="posneg"></i>
+				<label>Positive/Negative</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="table"></i>
+				<label>View As Table</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="graph"></i>
+				<label>View As Graph</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="percent"></i>
+				<label>Percent</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="amount"></i>
+				<label>Amount</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="contact"></i>
+				<label>Contact Card</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="delete"></i>
+				<label>Delete</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="reject"></i>
+				<label>Reject</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="approve"></i>
+				<label>Approve</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="excel"></i>
+				<label>Download Excel</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="word"></i>
+				<label>Download Word</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="notfavorite"></i>
+				<label>Not Favorite</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="isfavorite"></i>
+				<label>Is Favorite</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="gripper"></i>
+				<label>Gripper</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="cficon"></i>
+				<label>CF Icon</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<span class="icondisplay">
+				<i class="icon" name="cficon1c"></i>
+				<label>CF Icon - 1 Color</label>
+				<p>Loremipsum stet dolor. Lipsum dolor epsum stic.</p>
+			</span>
+			<div class="clear"></div>
+			<!-- End base icon set -->
+		</article>
+		<article>
+			<h1>Application</h1>
+			<p>Certain icons will require their base styles to be changed based on where they are located within the website. Also, some may even have expanded functionality depending on how they are being used. Shown here are a few common examples you may find when building pages.</p>
+			<section class="sidebarmock">
+				<h2>Sidebar</h2>
+				<p>
+					<a class="sidebartab">
+						Sidebar Back Tab
+						<i class="icon" name="pointerwest"></i>
+					</a>
+					<a class="sidebartab">
+						Sidebar Forward Tab
+						<i class="icon" name="pointereast"></i>
+					</a>
+					<div class="clear"></div>
+				</p>
+			</section>
+			<section class="sectionheadmock">
+				<h2>Section Heads</h2>
+				<p>A common occurrence in the section headers is the appearance of the generic controller. In the below example, the controller holds only one button, the Download as Excel file button.</p>
+				<h1 class="pagehead">
+					Section Header - Single button in controller
+					<i class="icon" name="excel"></i>
+				</h1>
+				<p>If necessary, this controller may need to be expanded to hold a set of interactions for it's accompanying section. When this occurs, the generic controller turns into a drop down list as shown below.</p>
+				<h1 class="pagehead">
+					Section Header - Multiple buttons in controller
+					<menu class="genericcontroller">
+						<i class="icon" name="controlexpand"></i>
+						<ul>
+							<li>
+								<i class="icon" name="excel"></i>
+								Download as Excel
+							</li>
+							<li>
+								<i class="icon" name="cogwheel"></i>
+								Table Settings
+							</li>
+							<li>
+								<i class="icon" name="hidden"></i>
+								Hide this section
+							</li>
+						</ul>
+					</menu>
+				</h1>
+				<p>Certain sections will also require there to be section-specific functionality be added to the header. In this case, they should appear just to the left of the generic controls. Shown here are also two buttons that function as a toggle. The View As Graph/Table has no border to separate the two and has the selected button highlighted with a background color.</p>
+				<h1 class="pagehead">
+					Section Header - Additional Controls
+					<menu class="genericcontroller">
+						<i class="icon" name="controlexpand"></i>
+						<ul>
+							<li>
+								<i class="icon" name="excel"></i>
+								Download as Excel
+							</li>
+							<li>
+								<i class="icon" name="cogwheel"></i>
+								Table Settings
+							</li>
+							<li>
+								<i class="icon" name="hidden"></i>
+								Hide this section
+							</li>
+						</ul>
+					</menu>
+					<menu class="dropdown">
+						<label>
+							<i class="icon" name="caretsouth"></i>
+							Currencies
+						</label>
+						<ul>
+							<li><input type="checkbox"/>CUR</li>
+							<li><input type="checkbox"/>CUR</li>
+							<li><input type="checkbox"/>CUR</li>
+							<li><input type="checkbox"/>CUR</li>
+							<li><input type="checkbox"/>CUR</li>
+							<li><input type="checkbox"/>CUR</li>
+							<li><input type="checkbox"/>CUR</li>
+							<li><input type="checkbox"/>CUR</li>
+						</ul>
+					</menu>
+					<i class="icon" name="table"></i>
+					<i class="icon selected" name="graph"></i>
+					<div class="clear"></div>
+				</h1>
+			<p>Many ChathamDirect tables offer the user additional interactions that only appear after they have selected an item. Here is an example of buttons that could appear after a user has selected an item in the set of data that accompanies this header.</p>
+				<h1 class="pagehead">
+					Section Header - Selection-based Controls
+					<menu class="genericcontroller">
+						<i class="icon" name="controlexpand"></i>
+						<ul>
+							<li>
+								<i class="icon" name="excel"></i>
+								Download as Excel
+							</li>
+							<li>
+								<i class="icon" name="cogwheel"></i>
+								Table Settings
+							</li>
+							<li>
+								<i class="icon" name="hidden"></i>
+								Hide this section
+							</li>
+						</ul>
+					</menu>
+					<menu class="dropdown">
+						<label>
+							<i class="icon" name="caretsouth"></i>
+							Currencies
+						</label>
+						<ul>
+							<li><input type="checkbox"/>CUR</li>
+							<li><input type="checkbox"/>CUR</li>
+							<li><input type="checkbox"/>CUR</li>
+							<li><input type="checkbox"/>CUR</li>
+							<li><input type="checkbox"/>CUR</li>
+							<li><input type="checkbox"/>CUR</li>
+							<li><input type="checkbox"/>CUR</li>
+							<li><input type="checkbox"/>CUR</li>
+						</ul>
+					</menu>
+					<i class="icon" name="table"></i>
+					<i class="icon selected" name="graph"></i>
+					<i class="icon" name="delete"></i>
+					<i class="icon" name="reject"></i>
+					<i class="icon" name="approve"></i>
+				</h1>
+			</section>
+			<div class="clear"></div>
+			<h2>Rows</h2>
+			<p>Coming soon.</p>
+			<h2>Generic Buttons</h2> <!- Relation to grid as well. ->
+			<p>Coming soon.</p>
+		</article>
+	</section>
+
+</body>
+
+</html>
