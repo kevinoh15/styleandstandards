@@ -449,6 +449,7 @@ h1.pagehead {
 	}
 }
 
+input[type="checkbox"] { margin: 0 10px 0 0; display: block; }
 
 /*====================================================================== sprite display */
 
@@ -570,12 +571,12 @@ span.icondisplay {
 
 .sidebarmock {
 	a.sidebartab {
-		float: left;
-		margin: 0 15px 0 0;
-		padding: 0;
+		margin: 0;
+		padding: 0 0 0 10px;
 		line-height: 40px;
+		clear: both;
 
-		&:nth-last-child(1) { padding: 0 0 0 10px;}
+		&:nth-last-child(1) { padding: 0 0 0 0;}
 	}
 
 	i[name="pointereast"]{ 
@@ -592,23 +593,47 @@ span.icondisplay {
 		margin: 5px 0 0 0;
 
 		&:hover{ background-color: inherit; }
-	 }	
+	 }
+
+	 section {
+	 	width: 244px;
+	 	min-height: 39px;
+	 	border-bottom: 1px solid rgba(169, 170, 174, 1.0);
+	 	padding: 0 0 0 10px;
+	 	clear: both;
+	 	overflow: hidden;
+	 	white-space: nowrap;
+	 	text-overflow: ellipsis;
+	 	position: relative;
+	 	line-height: 35px;
+	 	cursor: pointer;
+
+	 	i[name="careteast"],
+		i[name="caretsouth"] {
+			border: none;
+			margin: 3px 0 0 0;
+			float: right;
+			&:hover { background-color: inherit; }
+		}
+
+		p {
+			clear: both;
+		}
+	 }
 }
 
-.sectionheadmock {
-	h1.pagehead {
-		width: 100%;
-		padding: 0 10px 0 10px;
-		position: relative;
-		line-height: 40px;
-		margin: 15px 0 15px 0;
-
-		span {
-			width: 50%;
-			display: block;
-			margin: 10px 0 0 0;
-		}
+h1.pagehead {
+	width: 100%;
+	padding: 0 10px 0 10px;
+	position: relative;
+	line-height: 40px;
+	margin: 15px 0 15px 0;
+	span {
+		width: 50%;
+		display: block;
+		margin: 10px 0 0 0;
 	}
+	
 
 i[name="excel"] { 
 	float: right;
@@ -713,7 +738,11 @@ menu.dropdown {
 			padding: 0 10px 0 5px;
 		}
 
-		input[type="checkbox"] { margin: 0 5px 0 0;}
+	input[type="checkbox"] { 
+		margin: 12px 5px 0 0; 
+		display: block;
+		float: left; }
+
 	}
 }
 
@@ -738,6 +767,100 @@ i[name="delete"],
 i[name="reject"],
 i[name="approve"] { background-position-y: -87px ;}
 
+}
+
+/*====================================================================== tables */
+
+ul.mocktable {
+	width: 100%;
+	list-style: none;
+	border-bottom: 1px solid rgba(169, 170, 174, 1.0);
+	font-size: 13px;
+	color: rgba(65, 65, 65, 1.0);
+	margin: 0;
+	padding: 0;
+
+	li {
+		display: block;
+		height: 20px;
+		padding: 5px 10px;
+
+		&:nth-child(even) { background-color: rgba(238, 239, 242, 1.0); }
+		&:hover { background-color: rgba(222, 223, 227, 1.0); }
+	}
+
+	input[type="checkbox"],
+	i[name="cficon1c"],
+	i[name="user"],
+	i[name="isfavorite"],
+	i[name="notfavorite"],
+	label { 
+		float: left; 
+	}
+
+	input[type="checkbox"] {
+		margin: 3px 0 0 0;
+	}
+
+	label { margin: 3px 0 0 0;}
+
+	i[name="cficon1c"],
+	i[name="user"],
+	i[name="isfavorite"],
+	i[name="notfavorite"] {
+		border: none;
+		margin: -7px 5px 0 5px ;
+		padding: 0;
+		&:hover { background-color: transparent; }
+	}
+
+	i[name="cficon1c"],
+	i[name="user"] { cursor: default; }
+}
+
+/*====================================================================== generic buttons */
+
+button.generic {
+	width: 117px;
+	height: 40px;
+	font-size: 13px;
+	margin: 15px 10px 0 0;
+	border: 1px solid rgba(169, 170, 174, 1.0);
+	background-color: rgba(222, 223, 227, 1.0);
+	color: rgba(65, 65, 65, 1.0);
+	float: left;
+	position: relative;
+	cursor: pointer;
+
+	&:hover { background-color: rgba(210, 210, 210, 1.0); }
+	&:active { background-color: rgba(169, 170, 174, 1.0); }
+
+	i[name="arrowwest"],
+	i[name="arroweast"] { 
+		border: none;
+		padding: 0;
+		position: relative;
+
+		&:hover { background-color: transparent; }
+	}
+
+	i[name="arrowwest"] { float: left; }
+	i[name="arroweast"] { float: right; }
+
+	label {
+		display: block;
+		text-align: center;
+		margin: 16px auto 0 auto;
+		line-height: 28px;
+		cursor: pointer;
+	}
+
+	&[name="submission"] {
+		background-color: rgba(115, 173, 85, 1.0);
+		color: white;
+		
+		&:hover{ background-color: rgba(138, 178, 178, 1.0); }
+	}
 }
 
 
