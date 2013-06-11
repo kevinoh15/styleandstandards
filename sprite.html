@@ -30,12 +30,16 @@
 	</header>
 	<section class="pagecontent">
 		<article>
+			<nav class="inpage">
+				<a href="#icons">	Icons</a>&nbsp;/&nbsp;
+				<a href="#application">	Application</a>
+			</nav>
 			<h1>Using the sprite</h1>
 			<p>ChathamDirect features the use of a CSS sprite to generate the icons find throughout the site. The usage of this helps improve upon the time required maintaining the image assets, getting items into production, and most importantly, page load times for the client due to a reduction in HTTP requests (you can read up on that <a href="http://css-tricks.com/css-sprites/" target="_blank">here</a>). Shown here are the icons built from the sprite along with rules for using them.
 			</p>
 		</article>
 		<article>
-			<h1>Base icon set</h1>
+			<h1><a name="icons"></a>Base icon set</h1>
 			<span class="icondisplay">
 				<i class="icon" name="pointernorth"></i>
 				<label>Pointer - North</label>
@@ -380,10 +384,16 @@
 			<!-- End base icon set -->
 		</article>
 		<article>
-			<h1>Application</h1>
+			<h1><a name="application"></a>Application</h1>
+			<h2>Spatial</h2>
+			<p>The sprite is built on a 30px grid with icons filling a 16px space in the center of each grid unit. This leaves 7px of free space around the icon area in all directions. In any instance where a button needs to be smaller, the grid setup allows for 14px of free space between each graphic element. Generally though, sizes should be maintained even in cases where the icon is smaller than it's 16px parent.
+			<img src="img/spritegridandclearspace.png" alt="sprite spatial image"/>
+			</p>
+			<h2>Style overrides</h2>
 			<p>Certain icons will require their base styles to be changed based on where they are located within the website. Also, some may even have expanded functionality depending on how they are being used. Shown here are a few common examples you may find when building pages.</p>
 			<section class="sidebarmock">
 				<h2>Sidebar</h2>
+				<p>The sidebar's icon set will generally keep the same 30px size but have it's border and :hover state removed as is the case with the pointers and carets used on the tabs.</p><br>
 				<p>
 					<a class="sidebartab">
 						Sidebar Back Tab
@@ -578,8 +588,10 @@
 				</label>
 			</button>
 			<button class="generic">
-				<i class="icon" name="arroweast"></i>
-				<label>Next</label>
+				<label>
+					Next
+					<i class="icon" name="arroweast"></i>
+				</label>
 			</button>
 			<button class="generic" name="submission">
 				<label>Submit/Save</label>
