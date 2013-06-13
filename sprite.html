@@ -5,40 +5,32 @@
   <title>Style and Standards</title>
   <meta name="description" content="Style and Standards">
   <link rel="shortcut icon" href="favicon.ico">
-  <link rel="stylesheet/less" type="text/css" href="styles.less" />
+  <link rel="stylesheet/less" type="text/css" href="style.less" />
   <script src="js/less.js" type="text/javascript"></script>
-  <script src="js/jquery1.9.js"></script>
+  <script src="js/jquery1.9.js" type="text/javascript"></script>
+  <script src="js/navigation.js" type="text/javascript"></script>
 </head>
 
 <body>
-	<header class="global">
-		<nav>
-			<a href='index.html' name="logo">
-				<h1>Style</h1>
-				<h2>and</h2>
-				<h3>Standards</h3>
-				<div class="clear"></div>
+	<aside class="global">
+		<nav class="global">
+			<a class="logo" href="index.html">
+				<h1>Style <em>and</em></h1>
+				<h1>Standards</h1>
 			</a>
-			<nav>
-				<a href="sprite.html">Sprite & Buttons</a>
-				<a href="colors.html">Colors</a>
-				<a href="layout.html">Layout</a>
-				<a href="#">Prototypes</a>
-			</nav>
-			<div class="clear"></div>
+			<a href="grid.html" name="grid">Grid/Spatial</a>
+			<a href="sprite.html" name="sprite">The Sprite</a>
+			<a href="colors.html" name="colors">Colors</a>
+			<a href="type.html" name="type">Typography</a>
+			<a href="sizing.html" name="sizing">General Sizing</a>
+			<a href="forms.html" name="forms">Forms & Validation</a>
+			<a href="popups.html" name="popups">Popups</a>
 		</nav>
-	</header>
-	<section class="pagecontent">
-		<article>
-			<nav class="inpage">
-				<a href="#icons">	Icons</a>&nbsp;/&nbsp;
-				<a href="#application">	Application</a>
-			</nav>
-			<h1>Using the sprite</h1>
+	</aside>
+	<section class="global">
+		<h1>Using the sprite</h1>
 			<p>ChathamDirect features the use of a CSS sprite to generate the icons find throughout the site. The usage of this helps improve upon the time required maintaining the image assets, getting items into production, and most importantly, page load times for the client due to a reduction in HTTP requests (you can read up on that <a href="http://css-tricks.com/css-sprites/" target="_blank">here</a>). Shown here are the icons built from the sprite along with rules for using them.
 			</p>
-		</article>
-		<article>
 			<h1><a name="icons"></a>Base icon set</h1>
 			<span class="icondisplay">
 				<i class="icon" name="pointernorth"></i>
@@ -382,224 +374,234 @@
 			</span>
 			<div class="clear"></div>
 			<!-- End base icon set -->
-		</article>
-		<article>
-			<h1><a name="application"></a>Application</h1>
-			<h2>Spatial</h2>
+
+			<h1>Spatial</h1>
 			<p>The sprite is built on a 30px grid with icons filling a 16px space in the center of each grid unit. This leaves 7px of free space around the icon area in all directions. In any instance where a button needs to be smaller, the grid setup allows for 14px of free space between each graphic element. Generally though, sizes should be maintained even in cases where the icon is smaller than it's 16px parent.
 			<img src="img/spritegridandclearspace.png" alt="sprite spatial image"/>
 			</p>
-			<h2>Style overrides</h2>
+			<h1>Style overrides</h1>
 			<p>Certain icons will require their base styles to be changed based on where they are located within the website. Also, some may even have expanded functionality depending on how they are being used. Shown here are a few common examples you may find when building pages.</p>
-			<section class="sidebarmock">
-				<h2>Sidebar</h2>
-				<p>The sidebar's icon set will generally keep the same 30px size but have it's border and :hover state removed as is the case with the pointers and carets used on the tabs.</p><br>
-				<p>
-					<a class="sidebartab">
-						Sidebar Back Tab
-						<i class="icon" name="pointerwest"></i>
-					</a>
-					<section>
-						<i class="icon" name="careteast"></i>
-						Collapsable area - is collapsed
-					</section>
-					<section>
-						<i class="icon" name="caretsouth"></i>
-						Collapsable area - is expanded
-					</section>
-					<a class="sidebartab">
-						Sidebar Forward Tab
-						<i class="icon" name="pointereast"></i>
-					</a>
-					<div class="clear"></div>
-				</p>
-			</section>
-			<section class="sectionheadmock">
-				<h2>Section Heads</h2>
-				<p>A common occurrence in the section headers is the appearance of the generic controller. In the below example, the controller holds only one button, the Download as Excel file button.</p>
-				<h1 class="pagehead">
-					Section Header - Single button in controller
-					<i class="icon" name="excel"></i>
-				</h1>
-				<p>If necessary, this controller may need to be expanded to hold a set of interactions for it's accompanying section. When this occurs, the generic controller turns into a drop down list as shown below.</p>
-				<h1 class="pagehead">
-					Section Header - Multiple buttons in controller
-					<menu class="genericcontroller">
-						<i class="icon" name="controlexpand"></i>
-						<ul>
-							<li>
-								<i class="icon" name="excel"></i>
-								Download as Excel
-							</li>
-							<li>
-								<i class="icon" name="cogwheel"></i>
-								Table Settings
-							</li>
-							<li>
-								<i class="icon" name="hidden"></i>
-								Hide this section
-							</li>
-						</ul>
-					</menu>
-				</h1>
-				<p>Certain sections will also require there to be section-specific functionality be added to the header. In this case, they should appear just to the left of the generic controls. Shown here are also two buttons that function as a toggle. The View As Graph/Table has no border to separate the two and has the selected button highlighted with a background color.</p>
-				<h1 class="pagehead">
-					Section Header - Additional Controls
-					<menu class="genericcontroller">
-						<i class="icon" name="controlexpand"></i>
-						<ul>
-							<li>
-								<i class="icon" name="excel"></i>
-								Download as Excel
-							</li>
-							<li>
-								<i class="icon" name="cogwheel"></i>
-								Table Settings
-							</li>
-							<li>
-								<i class="icon" name="hidden"></i>
-								Hide this section
-							</li>
-						</ul>
-					</menu>
-					<menu class="dropdown">
-						<label>
-							<i class="icon" name="caretsouth"></i>
-							Currencies
-						</label>
-						<ul>
-							<li><input type="checkbox"/>CUR</li>
-							<li><input type="checkbox"/>CUR</li>
-							<li><input type="checkbox"/>CUR</li>
-							<li><input type="checkbox"/>CUR</li>
-							<li><input type="checkbox"/>CUR</li>
-							<li><input type="checkbox"/>CUR</li>
-							<li><input type="checkbox"/>CUR</li>
-							<li><input type="checkbox"/>CUR</li>
-						</ul>
-					</menu>
-					<i class="icon" name="table"></i>
-					<i class="icon selected" name="graph"></i>
-					<div class="clear"></div>
-				</h1>
-			<p>Many ChathamDirect tables offer the user additional interactions that only appear after they have selected an item. Here is an example of buttons that could appear after a user has selected an item in the set of data that accompanies this header.</p>
-				<h1 class="pagehead">
-					Section Header - Selection-based Controls
-					<menu class="genericcontroller">
-						<i class="icon" name="controlexpand"></i>
-						<ul>
-							<li>
-								<i class="icon" name="excel"></i>
-								Download as Excel
-							</li>
-							<li>
-								<i class="icon" name="cogwheel"></i>
-								Table Settings
-							</li>
-							<li>
-								<i class="icon" name="hidden"></i>
-								Hide this section
-							</li>
-						</ul>
-					</menu>
-					<menu class="dropdown">
-						<label>
-							<i class="icon" name="caretsouth"></i>
-							Currencies
-						</label>
-						<ul>
-							<li><input type="checkbox"/>CUR</li>
-							<li><input type="checkbox"/>CUR</li>
-							<li><input type="checkbox"/>CUR</li>
-							<li><input type="checkbox"/>CUR</li>
-							<li><input type="checkbox"/>CUR</li>
-							<li><input type="checkbox"/>CUR</li>
-							<li><input type="checkbox"/>CUR</li>
-							<li><input type="checkbox"/>CUR</li>
-						</ul>
-					</menu>
-					<i class="icon" name="table"></i>
-					<i class="icon selected" name="graph"></i>
-					<i class="icon" name="delete"></i>
-					<i class="icon" name="reject"></i>
-					<i class="icon" name="approve"></i>
-				</h1>
-			</section>
-			<div class="clear"></div>
-			<h2>Rows</h2>
-			<p>Style overrides on any icons appearing in the rows are fairly simple. Icons here require that their :hover states and borders be removed.</p>
-			<h1 class="pagehead" style="margin: 15px 0 0 0;">
-					Lorem ipsum dolor sit amet consectetur
-					<menu class="genericcontroller">
-						<i class="icon" name="controlexpand"></i>
-						<ul>
-							<li>
-								<i class="icon" name="excel"></i>
-								Download as Excel
-							</li>
-							<li>
-								<i class="icon" name="cogwheel"></i>
-								Table Settings
-							</li>
-							<li>
-								<i class="icon" name="hidden"></i>
-								Hide this section
-							</li>
-						</ul>
-					</menu>
-				</h1>
-				<div class="clear"></div>
-			<ul class="mocktable">
-				<li>
-					<input type="checkbox"/>
-					<i class="icon" name="cficon1c"></i>
-					<label>A row loremipsum set dolor.</label>
-				</li>
-				<li>
-					<input type="checkbox"/>
-					<i class="icon" name="user"></i>
-					<label>A row loremipsum set dolor.</label>
-				</li>
-				<li>
-					<input type="checkbox"/>
-					<i class="icon" name="notfavorite"></i>
-					<label>A row loremipsum set dolor.</label>
-				</li>
-				<li>
-					<input type="checkbox"/>
-					<i class="icon" name="isfavorite"></i>
-					<label>A row loremipsum set dolor.</label>
-				</li>
-				<li>
-					<input type="checkbox"/>
-					<i class="icon" name="isfavorite"></i>
-					<label>A row loremipsum set dolor.</label>
-				</li>
-			</ul>
-			<h2>Generic Buttons</h2>
-			<p>Often throughout ChathamDirect it is requried to use plain text buttons to perform certain actions. Our generic buttons should typically follow the <a href="layout.html">grid</a> for a one column width. These are normally used in the footers of pages or popups. Shown here are a few common instances.</p>
-			<button class="generic">
-				<label>Cancel/Close</label>
-			</button>
-			<button class="generic">
-				<label>
-					Previous
-					<i class="icon" name="arrowwest"></i>
-				</label>
-			</button>
-			<button class="generic">
-				<label>
-					Next
-					<i class="icon" name="arroweast"></i>
-				</label>
-			</button>
-			<button class="generic" name="submission">
-				<label>Submit/Save</label>
-			</button>
-			<div class="clear"></div>
-		</article>
-	</section>
+					<h1>Sidebar</h1>
+					<p>The sidebar's icon set will generally keep the same 30px size but have it's border and :hover 	state removed as is the case with the pointers and carets used on the tabs.</p>
+					<p>
+						<span class="samples">
+							<section class="sidebarmock">
+								<a class="sidebartab">
+									Sidebar Back Tab
+									<i class="icon" name="pointerwest"></i>
+								</a>
+								<section>
+									<i class="icon" name="careteast"></i>
+									Collapsable area - is collapsed
+								</section>
+								<section>
+									<i class="icon" name="caretsouth"></i>
+									Collapsable area - is expanded
+								</section>
+								<a class="sidebartab">
+									Sidebar Forward Tab
+									<i class="icon" name="pointereast"></i>
+								</a>
+								<div class="clear"></div>
+							</section>
+						</span>
+					</p>
 
+				<h1>Section Heads</h1>
+				<p>A common occurrence in the section headers is the appearance of the generic controller. In the below example, the controller holds only one button, the Download as Excel file button.</p>
+				<span class="samples">
+					<h1 class="pagehead">
+						Section Header - Single button in controller
+						<i class="icon" name="excel"></i>
+					</h1>
+				</span>
+				<p>If necessary, this controller may need to be expanded to hold a set of interactions for it's accompanying section. When this occurs, the generic controller turns into a drop down list as shown below.</p>
+				<span class="samples">
+					<h1 class="pagehead">
+						Section Header - Multiple buttons in controller
+						<menu class="genericcontroller">
+							<i class="icon" name="controlexpand"></i>
+							<ul>
+								<li>
+									<i class="icon" name="excel"></i>
+									Download as Excel
+								</li>
+								<li>
+									<i class="icon" name="cogwheel"></i>
+									Table Settings
+								</li>
+								<li>
+									<i class="icon" name="hidden"></i>
+									Hide this section
+								</li>
+							</ul>
+						</menu>
+					</h1>
+				</span>
+				<p>Certain sections will also require there to be section-specific functionality be added to the header. In this case, they should appear just to the left of the generic controls. Shown here are also two buttons that function as a toggle. The View As Graph/Table has no border to separate the two and has the selected button highlighted with a background color.</p>
+				<span class="samples">
+					<h1 class="pagehead">
+						Section Header - Additional Controls
+						<menu class="genericcontroller">
+							<i class="icon" name="controlexpand"></i>
+							<ul>
+								<li>
+									<i class="icon" name="excel"></i>
+									Download as Excel
+								</li>
+								<li>
+									<i class="icon" name="cogwheel"></i>
+									Table Settings
+								</li>
+								<li>
+									<i class="icon" name="hidden"></i>
+									Hide this section
+								</li>
+							</ul>
+						</menu>
+						<menu class="dropdown">
+							<label>
+								<i class="icon" name="caretsouth"></i>
+								Currencies
+							</label>
+							<ul>
+								<li><input type="checkbox"/>CUR</li>
+								<li><input type="checkbox"/>CUR</li>
+								<li><input type="checkbox"/>CUR</li>
+								<li><input type="checkbox"/>CUR</li>
+								<li><input type="checkbox"/>CUR</li>
+								<li><input type="checkbox"/>CUR</li>
+								<li><input type="checkbox"/>CUR</li>
+								<li><input type="checkbox"/>CUR</li>
+							</ul>
+						</menu>
+						<i class="icon" name="table"></i>
+						<i class="icon selected" name="graph"></i>
+						<div class="clear"></div>
+					</h1>
+				</span>
+			<p>Many ChathamDirect tables offer the user additional interactions that only appear after they have selected an item. Here is an example of buttons that could appear after a user has selected an item in the set of data that accompanies this header.</p>
+				<span class="samples">
+					<h1 class="pagehead">
+						Section Header - Selection-based Controls
+						<menu class="genericcontroller">
+							<i class="icon" name="controlexpand"></i>
+							<ul>
+								<li>
+									<i class="icon" name="excel"></i>
+									Download as Excel
+								</li>
+								<li>
+									<i class="icon" name="cogwheel"></i>
+									Table Settings
+								</li>
+								<li>
+									<i class="icon" name="hidden"></i>
+									Hide this section
+								</li>
+							</ul>
+						</menu>
+						<menu class="dropdown">
+							<label>
+								<i class="icon" name="caretsouth"></i>
+								Currencies
+							</label>
+							<ul>
+								<li><input type="checkbox"/>CUR</li>
+								<li><input type="checkbox"/>CUR</li>
+								<li><input type="checkbox"/>CUR</li>
+								<li><input type="checkbox"/>CUR</li>
+								<li><input type="checkbox"/>CUR</li>
+								<li><input type="checkbox"/>CUR</li>
+								<li><input type="checkbox"/>CUR</li>
+								<li><input type="checkbox"/>CUR</li>
+							</ul>
+						</menu>
+						<i class="icon" name="table"></i>
+						<i class="icon selected" name="graph"></i>
+						<i class="icon" name="delete"></i>
+						<i class="icon" name="reject"></i>
+						<i class="icon" name="approve"></i>
+					</h1>
+				</span>
+			<div class="clear"></div>
+			<h1>Rows</h1>
+			<p>Style overrides on any icons appearing in the rows are fairly simple. Icons here require that their :hover states and borders be removed.</p>
+			<span class="samples">
+				<h1 class="pagehead" style="margin: 15px 0 0 0;">
+						Lorem ipsum dolor sit amet consectetur
+						<menu class="genericcontroller">
+							<i class="icon" name="controlexpand"></i>
+							<ul>
+								<li>
+									<i class="icon" name="excel"></i>
+									Download as Excel
+								</li>
+								<li>
+									<i class="icon" name="cogwheel"></i>
+									Table Settings
+								</li>
+								<li>
+									<i class="icon" name="hidden"></i>
+									Hide this section
+								</li>
+							</ul>
+						</menu>
+					</h1>
+					<div class="clear"></div>
+				<ul class="mocktable">
+					<li>
+						<input type="checkbox"/>
+						<i class="icon" name="cficon1c"></i>
+						<label>A row loremipsum set dolor.</label>
+					</li>
+					<li>
+						<input type="checkbox"/>
+						<i class="icon" name="user"></i>
+						<label>A row loremipsum set dolor.</label>
+					</li>
+					<li>
+						<input type="checkbox"/>
+						<i class="icon" name="notfavorite"></i>
+						<label>A row loremipsum set dolor.</label>
+					</li>
+					<li>
+						<input type="checkbox"/>
+						<i class="icon" name="isfavorite"></i>
+						<label>A row loremipsum set dolor.</label>
+					</li>
+					<li>
+						<input type="checkbox"/>
+						<i class="icon" name="isfavorite"></i>
+						<label>A row loremipsum set dolor.</label>
+					</li>
+				</ul>
+			</span>
+			<h1>Generic Buttons</h1>
+			<p>Often throughout ChathamDirect it is requried to use plain text buttons to perform certain actions. Our generic buttons should typically follow the <a href="layout.html">grid</a> for a one column width. These are normally used in the footers of pages or popups. Shown here are a few common instances.</p>
+			<span class="samples">
+				<button class="generic">
+					<label>Cancel/Close</label>
+				</button>
+				<button class="generic">
+					<label>
+						Previous
+						<i class="icon" name="arrowwest"></i>
+					</label>
+				</button>
+				<button class="generic">
+					<label>
+						Next
+						<i class="icon" name="arroweast"></i>
+					</label>
+				</button>
+				<button class="generic" name="submission">
+					<label>Submit/Save</label>
+				</button>
+				<div class="clear"></div>
+			</span>
+		</section>
+	<div class="clear"></div>
 </body>
 
 </html>
