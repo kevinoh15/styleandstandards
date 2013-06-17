@@ -28,13 +28,78 @@
 		</nav>
 	</aside>
 	<section class="global">
-		<h1><a name="headers"></a>Tabs and Headers</h1>
-			<p>Keeping content and key areas of the site separated from one another along with letting each take up it’s required amount of space on screen is an important part to laying a page out. As with everything else, it’s also important that we maintain a consistent look when displaying these items on screen. The standard height for page headers and sidebar tabs is 40px tall. This allows for a good amount of space to create clear division on the page without becoming too distracting from the main content. It also fits in with UI standards for any users who may happen to visit the website from a tablet device. Below are two samples of how these items would appear on screen:</p>
-
+			<p>Keeping content and key areas of the site separated from one another along with letting each take up it’s required amount of space on screen is an important part to laying a page out. As with everything else, it’s also important that we maintain a consistent look when displaying these items on screen. The standard height for most parent elements on screen is 40px tall. This allows for a good amount of space to create clear division on the page without becoming too distracting from the main content. It also fits in with UI standards for any users who may happen to visit the website from a tablet device. Below are some examples of common elements.</p>
 		<span class="samples">
 			<a class="sidebartab">Sidebar Tab</a>
 			<h1 class="pagehead">Section Header <em>(Disclaimer area)</em></h1>
 			<div class="clear"></div>
+			<button class="generic">
+				<label>Cancel</label>
+			</button>
+			<button class="generic" name="submission">
+				<label>Submit</label>
+			</button>
+			<div class="clear"></div>
+		</span>
+			<p>In certain instances, the standard height will need to be adjusted. Two common occurences of this will be in the generic buttons' parent and on table rows. The parent of the generic button set will increase to 60px tall so to give them enough clear space. These generally will appear in the footer of popups or pages. For tables, the row height will decrease to 30px so that they do not take up too much of the screen when viewing large sets of data.</p>
+		<span class="samples">
+				<h1 class="pagehead" style="margin: 15px 0 0 0;">
+						Section Header <em>(40px)</em>
+						<menu class="genericcontroller">
+							<i class="icon" name="controlexpand"></i>
+							<ul>
+								<li>
+									<i class="icon" name="excel"></i>
+									Download as Excel
+								</li>
+								<li>
+									<i class="icon" name="cogwheel"></i>
+									Table Settings
+								</li>
+								<li>
+									<i class="icon" name="hidden"></i>
+									Hide this section
+								</li>
+							</ul>
+						</menu>
+					</h1>
+					<div class="clear"></div>
+				<ul class="mocktable">
+					<li>
+						<input type="checkbox"/>
+						<i class="icon" name="cficon1c"></i>
+						<label>A row loremipsum set dolor. (30px)</label>
+					</li>
+					<li>
+						<input type="checkbox"/>
+						<i class="icon" name="user"></i>
+						<label>A row loremipsum set dolor. (30px)</label>
+					</li>
+					<li>
+						<input type="checkbox"/>
+						<i class="icon" name="notfavorite"></i>
+						<label>A row loremipsum set dolor. (30px)</label>
+					</li>
+					<li>
+						<input type="checkbox"/>
+						<i class="icon" name="isfavorite"></i>
+						<label>A row loremipsum set dolor. (30px)</label>
+					</li>
+					<li>
+						<input type="checkbox"/>
+						<i class="icon" name="isfavorite"></i>
+						<label>A row loremipsum set dolor. (30px)</label>
+					</li>
+				</ul>
+			<footer>
+				<button class="generic" name="submission">
+					<label>Save Changes</label>
+				</button>
+				<button class="generic">
+					<label>Cancel</label>
+				</button>
+				<div class="clear"></div>
+			</footer>
 		</span>
 	</section>
 	<div class="clear"></div>
