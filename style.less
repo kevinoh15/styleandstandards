@@ -153,17 +153,19 @@ nav.global {
 		width: inherit;
 		display: block;
 		color: @darkgray;
-		.transition(all);
+		.transition(background-color);
 		padding: 10px;
 
 		&:hover { 
 			background-color: @black;
 			color: @lightgray;
+			font-weight: 400;
 		 }
 	}
 	.selected {
 		background-color: @black;
 		color: @lightgray;
+		font-weight: 400;
 	}
 	a.logo {
 		h1 { 
@@ -175,6 +177,8 @@ nav.global {
 		em { 
 			font-size: 14px;
 			font-style: normal;
+
+			
 		}
 	}
 }
