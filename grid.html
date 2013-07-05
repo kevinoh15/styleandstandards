@@ -1,0 +1,42 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+
+  <title>Style and Standards</title>
+  <meta name="description" content="Style and Standards">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet/less" type="text/css" href="style.less" />
+  <script src="js/less.js" type="text/javascript"></script>
+  <script src="js/jquery1.9.js" type="text/javascript"></script>
+  <script src="js/navigation.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<aside class="global">
+		<nav class="global">
+			<a class="logo" href="index.html">
+				<h1>Style <em>and</em></h1>
+				<h1>Standards</h1>
+			</a>
+			<a href="grid.html" name="grid">Grid/Spatial</a>
+			<a href="sprite.html" name="sprite">The Sprite</a>
+			<a href="colors.html" name="colors">Colors</a>
+			<a href="type.html" name="type">Typography</a>
+			<a href="sizing.html" name="sizing">General Sizing</a>
+			<a href="forms.html" name="forms">Forms & Validation</a>
+			<a href="popups.html" name="popups">Popups</a>
+		</nav>
+	</aside>
+	<section class="global">
+		<h1>The Grid</h1>
+			<p>It’s important when laying out new pages that we follow a consistent pattern for where items appear, how they look, and how a user interacts with them. One of the easiest ways for us to follow a consistent layout pattern is with a good foundation to build on. In our case, we’ll start with building pages off of a 10-column grid size as shown in the below image taken from <a href="https://youtrack/issue/UX-18" target="_blank">Youtrack UX-18.</a>
+
+			We leverage this grid system as it makes the most out of the available space for our common screen size of 1280 x 1024. The blue areas represent 10 pixels of clear space for any key content like buttons and text. Some UI elements should be easy to visualize like the header area that would stretch the full 10 columns. There’s also the sidebar that takes up 2 columns of space on the left along with the content area that spans 8 columns. Each new page will need to be reviewed on a case-by-case basis but in general, these guidelines should help you through most of the process.
+			</p>
+			<img src="img/gridlayout.png" alt="gridlayout from youtrack ux18"/>
+			<em>*The dark gray area represents a 10px clear space for primary content items like text and buttons.</em>
+	</section>
+	<div class="clear"></div>
+</body>
+
+</html>
